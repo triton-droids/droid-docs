@@ -5,18 +5,18 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'ShellHub',
-  tagline: 'Get seamless remote access to any Linux device',
-  url: 'https://docs.shellhub.io/',
-  baseUrl: '/',
+  title: 'Triton Droids Documentation',
+  tagline: 'Official Documentation for Triton Droids at UCSD',
+  url: 'https://triton-droid.github.io',
+  baseUrl: '/droid-docs',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'triton-droids', // Usually your GitHub org/user name.
+  projectName: 'droid-docs', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -35,44 +35,13 @@ const config = {
           path: 'docs',
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/shellhub-io/docs/tree/master',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/shellhub-io/docs/tree/master',
+            'https://github.com/triton-droids/droid-docs/tree/main',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-        googleAnalytics: {
-          trackingID: 'UA-168888230-2',
-        },
       }),
-    ],
-    [
-      'redocusaurus',
-      {
-        specs: [
-          {
-            id: 'community-openapi',
-            spec: 'https://shellhub-openapi-files.nyc3.digitaloceanspaces.com/community-openapi.yaml',
-          },
-          {
-            id: 'cloud-openapi',
-            spec: 'https://shellhub-openapi-files.nyc3.digitaloceanspaces.com/cloud-openapi.yaml',
-          },
-        ],
-        theme: {
-          // Change with your site colors
-          primaryColor: '#1890ff', // TODO: change to ShellHub color.
-        },
-      },
     ],
   ],
 
@@ -101,19 +70,13 @@ const config = {
       navbar: {
         hideOnScroll: false,
         logo: {
-          alt: 'ShellHub',
+          alt: 'Triton Droids',
           src: 'img/logo.png',
-          srcDark: 'img/logo-dark.svg',
+          srcDark: 'img/logo.png',
         },
         items: [
           {
-            to: 'https://cloud.shellhub.io',
-            label: 'Get Started',
-            className: 'nav-link_getting-started',
-            position: 'right',
-          },
-          {
-            href: 'https://github.com/shellhub-io/shellhub/',
+            href: 'https://github.com/triton-droids',
             position: 'right',
             className: 'header-github-link',
           },
@@ -134,7 +97,7 @@ const config = {
         contextualSearch: true,
         searchParameters: {},
       },
-      chatwoot: {
+      /*chatwoot: {
         websiteToken: "WNSdM8iU6UGw5h7ncy3qVvfh",
         baseURL: "https://chatwoot.infra.ossystems.io",
         enableInDevelopment: true,
@@ -147,7 +110,7 @@ const config = {
           type: "expanded_bubble",
           launcherTitle: "Chat with us",
         },
-      },
+      },*/
       zoom: {
         selector: '.markdown img',
         background: {
@@ -161,7 +124,7 @@ const config = {
     }),
 
   plugins: [
-    '@chatwoot/docusaurus-plugin',
+    //'@chatwoot/docusaurus-plugin',
     'docusaurus-plugin-image-zoom',
   ],
 };
