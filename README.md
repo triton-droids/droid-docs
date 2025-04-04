@@ -1,6 +1,13 @@
 # Website
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator. It is a fork from [ShellHub](https://github.com/shellhub-io/shellhub/), all thanks to them and Docusaurus.
+
+Please make sure to first run these two commands:
+```bash
+conda env create -f environment.yml
+conda activate droid-docs
+```
+This will put you in the conda environment for working on the documentation. You can run all the commands below after.
 
 ### Installation
 
