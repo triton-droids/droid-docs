@@ -25,17 +25,19 @@ export default function DocItemFooter(): JSX.Element | null {
         <Giscus
           loading='async'
           crossorigin='true'
-          repo='shellhub-io/shellhub'
-          repoId='MDEwOlJlcG9zaXRvcnkxODcwNzg2MzE='
-          category='General'
-          categoryId='MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMyMDA1MjEy'
-          mapping='title'
-          strict='0'
-          reactionsEnabled='1'
-          emitMetadata='0'
-          inputPosition='top'
-          theme='dark_dimmed'
-          lang='en' />
+          id="comments"
+          repo="triton-droids/droid-docs"
+          repoId="R_kgDOOTxBNw"
+          category="General"
+          categoryId="DIC_kwDOOTxBN84CoyvV"
+          mapping="pathname"
+          strict="0"
+          reactionsEnabled="1"
+          emitMetadata="0"
+          inputPosition="top"
+          theme="preferred_color_scheme"
+          lang="en"
+          loading="lazy"/>
       }  
       <footer
         className={clsx(ThemeClassNames.docs.docFooter, 'docusaurus-mt-lg')}>
