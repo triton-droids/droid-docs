@@ -22,11 +22,8 @@ In order to contribute, please follow these steps:
     3. **Ubuntu** -> ```sudo apt update && sudo apt install nodejs npm``` 
 3. **Install yarn** -> ```npm install --global yarn``` 
     1. [Other methods](https://classic.yarnpkg.com/lang/en/docs/install/), expand the section under **Alternatives**
-4. **Create a conda environment using the environment.yml** -> ```conda env create --name <env_name> -f environment.yml```
-5. **Activate conda environment and install necessary yarn dependencies**
-    1. **Activation** -> ```conda activate <env_name>```
-    2. **Yarn Dependencies** -> Run ```yarn``` in command line interface where there exists a **yarn.lock** file
-6. **Development**
+4. **Install necessary yarn dependencies** -> Run ``` yarn``` in command line interface where there exists a **yarn.lock** file
+5. **Development**
     1. Please do not develop on the main branch; only **merge** your documentation from a separate branch after getting approval.
     2. **Local Development** -> ```yarn start```
     3. **Push to Production** -> ```GIT_USER=<git_username> yarn deploy```

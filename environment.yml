@@ -1,5 +1,0 @@
-name: droid_docs
-channels:
-  - https://repo.anaconda.com/pkgs/main
-  - https://repo.anaconda.com/pkgs/r
-prefix: /home/d3shin/.conda/envs/droid_docs
