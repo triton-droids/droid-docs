@@ -107,7 +107,7 @@ main {
 }
 
 .theme-doc-sidebar-item-category-level-1 {
-  margin-bottom: var(--ifm-spacing-vertical);
+  margin-bottom: 0;
 }
 
 .theme-doc-sidebar-item-category-level-1>ul.menu__list {
@@ -122,7 +122,7 @@ main {
 
 .theme-doc-sidebar-item-category-level-1>.menu__list {
   border-left: 1px solid var(--ifm-toc-border-color);
-  margin-left: var(--ifm-menu-link-padding-horizontal);
+  margin-left: 0;
 }
 
 ul.menu__list > li > a.menu__link {
